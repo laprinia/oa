@@ -12,7 +12,9 @@
             <e p="AllSkyFree_Readme.txt" t="Include" />
           </e>
         </e>
+        <e p="FollowPlayer.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="Movement.cs" t="Include" />
           <e p="Script.cs" t="Include" />
         </e>
       </e>
