@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour
                 var direction = hitInfo.point - transform.position;
                 direction.y = 0f;
                 direction.Normalize();
-                transform.forward = Vector3.Lerp(transform.forward,direction,_aimSmoothStep);
+                transform.forward = Vector3.Lerp(transform.forward,direction,0.3f);
             }
         }
     }

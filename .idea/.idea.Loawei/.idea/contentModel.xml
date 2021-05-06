@@ -12,11 +12,15 @@
             <e p="AllSkyFree_Readme.txt" t="Include" />
           </e>
         </e>
-        <e p="FollowPlayer.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="FollowPlayer.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
-          <e p="Script.cs" t="Include" />
         </e>
+        <e p="Shaders" t="Include">
+          <e p="Timeshift.shader" t="Include" />
+        </e>
+        <e p="TimeshiftActivator.cs" t="Include" />
+        <e p="TimeshiftRedirect.cs" t="Include" />
       </e>
       <e p="Loawei.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
