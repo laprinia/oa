@@ -2,49 +2,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Playables;
 
 public class Movement : MonoBehaviour
 {
     [SerializeField] float _speed = 2.5f;
-    [SerializeField] LayerMask _aimLayerMask;
-    [SerializeField] private float _aimSmoothStep = 0.3f;
+    [SerializeField] private float _turnSmoothTime = 0.1f;
+    
     Animator _animator;
+    private float turnSmooth;
 
     private void Awake() => _animator = GetComponent<Animator>();
 
 
     void Update()
     {
-        AimTowardsMousePosition();
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        Vector3 movement = new Vector3(horizontal, 0.0f, vertical);
+        float runSpeed = 1;
+        Vector3 movement = new Vector3(horizontal * runSpeed, 0.0f, vertical * runSpeed);
+        _animator.SetFloat("zVelocity", Input.GetAxisRaw("Vertical") * runSpeed, 0.3f, Time.deltaTime);
+        _animator.SetFloat("xVelocity", Input.GetAxisRaw("Horizontal") * runSpeed, 0.3f, Time.deltaTime);
         if (movement.magnitude > 0)
         {
             movement.Normalize();
             movement *= _speed * Time.deltaTime;
-            transform.Translate(movement, Space.World);
-        }
+            float cameraAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, Camera.main.transform.localEulerAngles.y,
+                ref turnSmooth, _turnSmoothTime);
+            transform.localEulerAngles =
+                new Vector3(transform.localEulerAngles.x, cameraAngle, transform.localEulerAngles.z);
 
-        float velocityZ = Vector3.Dot(movement.normalized, transform.forward);
-        float velocityX = Vector3.Dot(movement.normalized, transform.right);
-
-        _animator.SetFloat("zVelocity", velocityZ, 0.1f, Time.deltaTime);
-        _animator.SetFloat("xVelocity", velocityX, 0.1f, Time.deltaTime);
-    }
-
-    void AimTowardsMousePosition()
-    {
-        if (!(Camera.main is null))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, _aimLayerMask))
-            {
-                var direction = hitInfo.point - transform.position;
-                direction.y = 0f;
-                direction.Normalize();
-                transform.forward = Vector3.Lerp(transform.forward,direction,0.3f);
-            }
+            transform.Translate(movement, Space.Self);
         }
     }
 }

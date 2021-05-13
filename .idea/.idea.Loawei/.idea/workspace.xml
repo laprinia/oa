@@ -21,26 +21,24 @@
   <component name="ChangeListManager">
     <list default="true" id="4e0963c9-c20a-498c-bf95-150687c6ec72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Action.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Action.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Full_Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Full_Jump.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Idle.001.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Idle.001.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Idle.002.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Idle.002.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Run.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Scan.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Scan.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph ShockedLook.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph ShockedLook.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph Walk.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph WalkBack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Animations/Ralph WalkBack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Ralph Animator Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Ralph Animator Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Characters/Ralph/Ralph Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Ralph/Ralph Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/textures/RockFInalLOD0_lambert2_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/textures/RockFInalLOD0_lambert2_BaseColor.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FollowPlayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FollowPlayer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/textures/CorruptedMire_Diffuse.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/textures/CorruptedMire_Diffuse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/textures/CorruptedMire_Diffuse_Outter.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/textures/CorruptedMire_Diffuse_Outter.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Script.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Script.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TimeshiftActivator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TimeshiftActivator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TimeshiftRedirect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TimeshiftRedirect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/nimbus/Material/Crown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/nimbus/Material/Crown.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +50,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/CGIncludes/UnityPBSLighting.cginc" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TimeshiftActivator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TimeshiftRedirect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/a5/18343d42/Transform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -61,10 +58,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Script.cs" />
         <option value="$PROJECT_DIR$/Assets/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/FollowPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Shaders/Timeshift.shader" />
         <option value="$PROJECT_DIR$/Assets/TimeshiftRedirect.cs" />
         <option value="$PROJECT_DIR$/Assets/TimeshiftActivator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftRedirect1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftRedirect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftBulbRedirect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +112,9 @@
       <workItem from="1617183781946" duration="315000" />
       <workItem from="1617308284067" duration="573000" />
       <workItem from="1620209212614" duration="16546000" />
-      <workItem from="1620290205506" duration="16351000" />
+      <workItem from="1620290205506" duration="18295000" />
+      <workItem from="1620754458145" duration="1284000" />
+      <workItem from="1620928787915" duration="6548000" />
     </task>
     <servers />
   </component>
