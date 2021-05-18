@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Astra Inventory
   m_EditorClassIdentifier: 
   Container:
+  - item: {fileID: 11400000, guid: 516252965db6c6e4ab58a5cd9620e2ff, type: 2}
+    amount: 1
   - item: {fileID: 11400000, guid: 1775e14996ecf7841beef804651453c7, type: 2}
-    amount: 3
+    amount: 1
