@@ -52,7 +52,8 @@ public class TimeshiftActivator : MonoBehaviour
     }
     private void ShowObjects()
     {
-        var go = Array.FindAll(_indirectObjects, o => o.GetComponent<TimeshiftBulbRedirect>() != null )[0];
+        var go = Array.FindAll(_indirectObjects, o => o.GetComponent<TimeshiftBulbRedirect>() != null)[0];
+       
         foreach (Transform c in go.transform)
         {
 
