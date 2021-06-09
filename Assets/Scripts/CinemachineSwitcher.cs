@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class CinemachineSwitcher : MonoBehaviour {
@@ -10,6 +12,9 @@ public class CinemachineSwitcher : MonoBehaviour {
     private bool isAstraCamera = true;
     public bool canSwitch = false;
 
+    public GameObject ralph;
+    public GameObject astra;
+
     private void Awake() {
         animator = GetComponent<Animator>();
     }
@@ -18,9 +23,13 @@ public class CinemachineSwitcher : MonoBehaviour {
         if (isAstraCamera) {
             animator.Play("Ralph camera");
             ralphAnimator.SetBool("ShutDown", false);
+            astra.GetComponent<Movement>().enabled = false;
+            StartCoroutine(WaitBeforeMoving(2.5f, ralph));
         } else {
             ralphAnimator.SetBool("ShutDown", true);
             animator.Play("Astra camera");
+            ralph.GetComponent<Movement>().enabled = false;
+            StartCoroutine(WaitBeforeMoving(2.5f, astra));
         }
         isAstraCamera = !isAstraCamera;
     }
@@ -29,5 +38,10 @@ public class CinemachineSwitcher : MonoBehaviour {
         if (Input.GetKeyDown("space") && canSwitch) {
             SwitchState();
         }
+    }
+
+    private IEnumerator WaitBeforeMoving(float waitTime, GameObject character) {
+        yield return new WaitForSeconds(waitTime);
+        character.GetComponent<Movement>().enabled = true;
     }
 }
