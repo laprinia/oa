@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4528302, g: 0.20469917, b: 0.19010323, a: 0.392}
+  m_Color: {r: 0.032751877, g: 0.3018868, b: 0.2586923, a: 0.392}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8396226, g: 0.34456214, b: 0.34456214, a: 0.392}
+  m_Color: {r: 0.30588236, g: 0.62352943, b: 0.5647059, a: 0.392}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -404,6 +404,7 @@ GameObject:
   - component: {fileID: 8010022738281818893}
   - component: {fileID: 8010022738281818892}
   - component: {fileID: 8010022738281818891}
+  - component: {fileID: 1495105853}
   m_Layer: 5
   m_Name: Inventory Menu
   m_TagString: Untagged
@@ -491,3 +492,16 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1495105853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8010022738281818890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb051cd8765a5a742982d20d5cf79c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryCanvas: {fileID: 8010022737633983959}

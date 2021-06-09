@@ -6,26 +6,17 @@ public class MeleeEnemy : MonoBehaviour
 {
     public Vector3 lastPosition = Vector3.zero;
     public float movementSpeed = 6.0f;
-
-    public Animator Animator;
-
+    public Animator _animator;
     public Transform[] waypoints;
-    private int currentWaypoint = 0;
+    private int currentWaypoint;
     public float viewRadius = 5;
     public float attackRadius = 3;
     public int attackCoolDown = 2;
     public int walkCoolDown = 5;
     public Transform target;
-    private float attackTimeStamp = 0f;
-    private float walkTimeStamp = 0f;
-    public float gravity = 18;
-    public GameObject myself;
-    public Animator animator;
-    //public GameObject heart;
-    //public ParticleSystem fire;
-    AudioSource audioSourceMeleeSound;
+    private float attackTimeStamp;
+    private float walkTimeStamp;
 
-    public Rigidbody rb;
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.cyan;
@@ -33,25 +24,15 @@ public class MeleeEnemy : MonoBehaviour
     }
 
     private void Start() {
-        audioSourceMeleeSound = this.gameObject.GetComponent<AudioSource>();
         lastPosition = transform.position;
-        rb = GetComponent<Rigidbody>();
     }
 
     private void Update() {
-        float currentSpeed = (transform.position - lastPosition).magnitude;
-        Animator.SetFloat("speed", currentSpeed * 10);
+        float currentSpeed = Vector3.Distance(transform.position ,lastPosition);
+        Debug.Log(currentSpeed);
+        _animator.SetFloat("speed", currentSpeed * movementSpeed);
         lastPosition = transform.position;
-
-        animator.SetBool("isShutDown", false);
-
-        if (rb.velocity.y < -8) {
-            this.enabled = false;
-            animator.SetBool("isShutDown", true);
-            animator.SetFloat("speed", 0);
-            StartCoroutine(Destroy(5));
-        }
-
+        _animator.SetBool("isShutDown", false);
 
         float distance = Vector3.Distance(target.position, transform.position);
         float level = Mathf.Abs((target.position - transform.position).y);
@@ -61,14 +42,11 @@ public class MeleeEnemy : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, target.position,
                     Time.deltaTime * movementSpeed);
             }
-
-
             if (distance <= attackRadius && Time.time >= attackTimeStamp) {
-                Animator.SetTrigger("scanTrigger");
+                _animator.SetTrigger("scanTrigger");
                 attackTimeStamp = Time.time + attackCoolDown;
                 //TODO
-                //target.GetComponent<Health>().DamagePlayer(25, this.gameObject);
-                audioSourceMeleeSound.Play();
+               
             }
         } else if (Time.time >= walkTimeStamp) {
             if (currentWaypoint == waypoints.Length) {
@@ -84,17 +62,6 @@ public class MeleeEnemy : MonoBehaviour
             }
         }
     }
-
-    IEnumerator Destroy(int interval) {
-        //fire.gameObject.SetActive(true);
-        yield return new WaitForSeconds(interval);
-        //Instantiate(heart, new Vector3(0, .5f, 0) + transform.position, Quaternion.identity);
-        Destroy(myself);
-    }
-
-    private void FixedUpdate() {
-    }
-
     void FaceTarget(Transform currentTarget) {
         Vector3 direction = (currentTarget.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
