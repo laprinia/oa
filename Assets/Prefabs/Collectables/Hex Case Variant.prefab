@@ -184,7 +184,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 829749aa6dc94dc42b77923dd3c5634f,
         type: 3}
       propertyPath: m_Name
-      value: Hex Case
+      value: Hex Case Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 829749aa6dc94dc42b77923dd3c5634f, type: 3}
