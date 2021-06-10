@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,7 +11,12 @@ public class CinemachineSwitcher : MonoBehaviour {
     private Animator animator;
 
     private bool isAstraCamera = true;
-    public bool canSwitch = false;
+    public bool canSwitch = true;
+    public bool isLerping = false;
+
+    private float initialValueRalphZone = 0;
+    private float valueRalphRedZoneToChange = -1;
+    private float t = 0.0f;
 
     public GameObject ralph;
     public GameObject astra;
@@ -21,22 +27,57 @@ public class CinemachineSwitcher : MonoBehaviour {
 
     private void SwitchState() {
         if (isAstraCamera) {
-            animator.Play("Ralph camera");
+            isAstraCamera = !isAstraCamera;
             ralphAnimator.SetBool("ShutDown", false);
+            animator.Play("Ralph camera");
             astra.GetComponent<Movement>().enabled = false;
-            StartCoroutine(WaitBeforeMoving(2.5f, ralph));
+            StartCoroutine(WaitBeforeMoving(1.0f, ralph));
+            isLerping = true;
+            canSwitch = true;
         } else {
+            isLerping = true;
+            isAstraCamera = !isAstraCamera;
             ralphAnimator.SetBool("ShutDown", true);
             animator.Play("Astra camera");
             ralph.GetComponent<Movement>().enabled = false;
-            StartCoroutine(WaitBeforeMoving(2.5f, astra));
+            StartCoroutine(WaitBeforeMoving(3.2f, astra));
+            canSwitch = true;
         }
-        isAstraCamera = !isAstraCamera;
     }
 
     private void Update() {
-        if (Input.GetKeyDown("space") && canSwitch) {
-            SwitchState();
+        if (Input.GetKeyDown("space")) {
+            Collider[] collisions;
+            if (isAstraCamera) {
+                collisions = Physics.OverlapSphere(astra.transform.position, 5);
+                collisions = Array.FindAll(collisions, c => c.tag.Equals("RalphTrigger"));
+            } else {
+                collisions = Physics.OverlapSphere(ralph.transform.position, 5);
+                collisions = Array.FindAll(collisions, c => c.tag.Equals("AstraTrigger"));
+            }
+            if (collisions[0] != null && canSwitch) {
+                Debug.Log("aici");
+                canSwitch = false;
+                SwitchState();
+                initialValueRalphZone = ralph.GetComponent<TimeshiftActivator>().GetRadius();
+                if (initialValueRalphZone <= 4.5f) {
+                    valueRalphRedZoneToChange = 5;
+                } else {
+                    valueRalphRedZoneToChange = 0.000001f;
+                }
+                t = 0.0f;
+            }
+        }
+
+        if (isLerping) {
+            ralph.GetComponent<TimeshiftActivator>().SetRadius(Mathf.Lerp(initialValueRalphZone, valueRalphRedZoneToChange, t));
+            
+            t += 0.5f * Time.deltaTime;
+
+            if (t > 1.0f) {
+                isLerping = false;
+                ralph.GetComponent<TimeshiftActivator>().SetRadius(valueRalphRedZoneToChange);
+            }
         }
     }
 
