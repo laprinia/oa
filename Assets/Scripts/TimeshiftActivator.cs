@@ -8,7 +8,7 @@ public class TimeshiftActivator : MonoBehaviour
     [SerializeField] private bool _isActive = false;
     [SerializeField] private GameObject[] _directObjects;
     [SerializeField] private GameObject[] _indirectObjects;
-    [SerializeField] private float _radius = 5;
+    [SerializeField] private float _radius = 0.001f;
     [SerializeField] private float _borderWidth = 0.1f;
     [SerializeField] private Color _borderColor;
     [SerializeField] private Transform _center;
@@ -38,7 +38,7 @@ public class TimeshiftActivator : MonoBehaviour
             {
                 obj.GetComponent<TimeshiftRedirect>().Redirect(transform.position,_radius,_borderWidth,_borderColor);
             }
-            else
+            else if(obj.GetComponent<TimeshiftBulbRedirect>() !=null)
             {
                 obj.GetComponent<TimeshiftBulbRedirect>().Redirect(transform.position,_radius,_borderWidth,_borderColor);
             }
@@ -52,23 +52,36 @@ public class TimeshiftActivator : MonoBehaviour
     }
     private void ShowObjects()
     {
-        var go = Array.FindAll(_indirectObjects, o => o.GetComponent<TimeshiftBulbRedirect>() != null)[0];
-       
-        foreach (Transform c in go.transform)
+        var bulbPlantParentGo = Array.FindAll(_indirectObjects, o => o.GetComponent<TimeshiftBulbRedirect>() != null)[0];
+        var collectableParentGo=Array.FindAll(_indirectObjects, o => o.tag.Equals("Collectable"))[0];
+        foreach (Transform bulb in bulbPlantParentGo.transform)
         {
 
-            if (PointInsideRadius(c.position))
+            if (PointInsideRadius(bulb.position))
             {
-                c.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
-                c.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
+                bulb.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
+                bulb.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
             }
             else
             {
-                c.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
-                c.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
+                bulb.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+                bulb.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
             }
 
         }
+
+        foreach (Transform collect in collectableParentGo.transform)
+        {
+            if (PointInsideRadius(collect.position))
+            {
+                collect.gameObject.SetActive(true);
+            }
+            else
+            {
+                collect.gameObject.SetActive(false);
+            }
+        }
+        
 
         
 

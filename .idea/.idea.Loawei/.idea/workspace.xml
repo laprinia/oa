@@ -21,8 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4e0963c9-c20a-498c-bf95-150687c6ec72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +57,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/BotMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Inventory/Scripts/InventoryManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Inventory/Scripts/DisplayInventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/CollectibleInteract.cs" />
       <option value="$PROJECT_DIR$/Assets/CollectableInteract.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qW80BqRdj322JC0ID1hym2z1iE" />
@@ -110,7 +115,8 @@
       <workItem from="1621356470909" duration="3913000" />
       <workItem from="1623156867388" duration="12544000" />
       <workItem from="1623249312887" duration="2146000" />
-      <workItem from="1623270939919" duration="2700000" />
+      <workItem from="1623270939919" duration="3295000" />
+      <workItem from="1623353647440" duration="879000" />
     </task>
     <servers />
   </component>
