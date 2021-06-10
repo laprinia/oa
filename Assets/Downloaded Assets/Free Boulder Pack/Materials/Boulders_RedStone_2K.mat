@@ -111,5 +111,5 @@ Material:
     - _BorderColor: {r: 1, g: 0.0141509175, b: 0.50939864, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LightPosition: {r: 46.42529, g: 0.96297896, b: 9.711035, a: 0}
+    - _LightPosition: {r: 47.84346, g: 1.1982715, b: 1.0637345, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
