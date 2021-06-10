@@ -26,8 +26,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Scripts/ShowUIElements.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Scripts/ShowUIElements.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +60,7 @@
       <option value="$PROJECT_DIR$/Assets/CollectibleInteract.cs" />
       <option value="$PROJECT_DIR$/Assets/CollectableInteract.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Inventory/Scripts/ShowUIElements.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qW80BqRdj322JC0ID1hym2z1iE" />
@@ -116,7 +117,7 @@
       <workItem from="1623156867388" duration="12544000" />
       <workItem from="1623249312887" duration="2146000" />
       <workItem from="1623270939919" duration="3295000" />
-      <workItem from="1623353647440" duration="879000" />
+      <workItem from="1623353647440" duration="5851000" />
     </task>
     <servers />
   </component>

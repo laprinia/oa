@@ -6,22 +6,18 @@ using UnityEngine;
 public class ShowUIElements : MonoBehaviour
 {
     private bool isInventoryShowing;
-    [SerializeField]private GameObject inventoryCanvas;
-
-
-    private void Start()
-    {
-        inventoryCanvas.SetActive(false);
-   
-    }
-
+    [SerializeField] private Animator _animator;
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
             isInventoryShowing = !isInventoryShowing;
-            inventoryCanvas.SetActive(isInventoryShowing);
-
+            _animator.ResetTrigger(isInventoryShowing?"disappear":"appear");
+            _animator.SetTrigger(isInventoryShowing?"appear":"disappear");
+            
         }
     }
+    
+    
 }
