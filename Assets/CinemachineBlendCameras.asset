@@ -31,22 +31,31 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.67146504
-          value: 0.18033744
-          inSlope: 1.107341
-          outSlope: 1.107341
+          time: 0.25158024
+          value: 0.7994501
+          inSlope: 0.36628577
+          outSlope: 0.36628577
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.24689125
+          outWeight: 0.07742123
+        - serializedVersion: 3
+          time: 0.65551245
+          value: 0.9204597
+          inSlope: 0.109610796
+          outSlope: 0.109610796
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.17703559
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
           value: 1
-          inSlope: 2
-          outSlope: 2
+          inSlope: 0.32455012
+          outSlope: 0.32455012
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0
+          inWeight: 0.238803
           outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -55,7 +64,7 @@ MonoBehaviour:
     m_To: AstraCamera
     m_Blend:
       m_Style: 7
-      m_Time: 2
+      m_Time: 3
       m_CustomCurve:
         serializedVersion: 2
         m_Curve:
@@ -69,8 +78,8 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.67146504
-          value: 0.18033744
+          time: 0.79927266
+          value: 0.17298271
           inSlope: 1.107341
           outSlope: 1.107341
           tangentMode: 0

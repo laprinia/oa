@@ -8,6 +8,8 @@ TagManager:
   - Showable
   - Enemy
   - Collectable
+  - RalphTrigger
+  - AstraTrigger
   layers:
   - Default
   - TransparentFX

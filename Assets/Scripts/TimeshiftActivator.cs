@@ -81,10 +81,14 @@ public class TimeshiftActivator : MonoBehaviour
                 collect.gameObject.SetActive(false);
             }
         }
-        
+    }
 
-        
+    public void SetRadius(float value) {
+        _radius = value;
+    }
 
+    public float GetRadius() {
+        return _radius;
     }
 }
 
