@@ -21,13 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4e0963c9-c20a-498c-bf95-150687c6ec72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ralph/Ralph Animator Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ralph/Ralph Animator Controller.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Post-processing Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Post-processing Profile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +64,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Inventory/Scripts/ShowUIElements.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CollectableInteract.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" />
+      <option value="$PROJECT_DIR$/Assets/TimeToLive.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qW80BqRdj322JC0ID1hym2z1iE" />
@@ -120,7 +123,7 @@
       <workItem from="1623249312887" duration="2146000" />
       <workItem from="1623270939919" duration="3295000" />
       <workItem from="1623353647440" duration="5851000" />
-      <workItem from="1623516936480" duration="3157000" />
+      <workItem from="1623516936480" duration="7701000" />
     </task>
     <servers />
   </component>

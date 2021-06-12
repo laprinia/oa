@@ -7,7 +7,8 @@ using UnityEngine.InputSystem;
 public class CinemachineSwitcher : MonoBehaviour {
     public Animator ralphAnimator;
     public Animator astraAnimator;
-
+    public GameObject ralphHUD;
+    public TimeToLive timeToLive;
     private Animator animator;
 
     private bool isAstraCamera = true;
@@ -34,6 +35,8 @@ public class CinemachineSwitcher : MonoBehaviour {
             StartCoroutine(WaitBeforeMoving(1.0f, ralph));
             isLerping = true;
             canSwitch = true;
+            ralphHUD.SetActive(true);
+            timeToLive.ResetTimer();
         } else {
             isLerping = true;
             isAstraCamera = !isAstraCamera;
@@ -42,11 +45,12 @@ public class CinemachineSwitcher : MonoBehaviour {
             ralph.GetComponent<Movement>().enabled = false;
             StartCoroutine(WaitBeforeMoving(3.2f, astra));
             canSwitch = true;
+            ralphHUD.SetActive(false);
         }
     }
 
     private void Update() {
-        if (Input.GetKeyDown("space")) {
+        if (Input.GetKeyDown("space") ||(!isAstraCamera && timeToLive.ralphTimeToLiveExpired)) {
             Collider[] collisions;
             if (isAstraCamera) {
                 collisions = Physics.OverlapSphere(astra.transform.position, 5);

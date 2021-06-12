@@ -92,7 +92,7 @@ Material:
     - _GlossMapScale: 0.6
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _LightRadius: 0.001
+    - _LightRadius: 0.000001
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -107,4 +107,4 @@ Material:
     - _BorderColor: {r: 1, g: 0.0141509175, b: 0.50939864, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LightPosition: {r: 41.030506, g: 0.45406803, b: -4.2202406, a: 0}
+    - _LightPosition: {r: 41.022358, g: 0.46080592, b: -2.9259799, a: 0}
