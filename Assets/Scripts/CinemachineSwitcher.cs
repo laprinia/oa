@@ -55,7 +55,7 @@ public class CinemachineSwitcher : MonoBehaviour {
                 collisions = Physics.OverlapSphere(ralph.transform.position, 5);
                 collisions = Array.FindAll(collisions, c => c.tag.Equals("AstraTrigger"));
             }
-            if (collisions[0] != null && canSwitch) {
+            if (collisions.Length != 0 && canSwitch) {
                 Debug.Log("aici");
                 canSwitch = false;
                 SwitchState();
@@ -66,6 +66,8 @@ public class CinemachineSwitcher : MonoBehaviour {
                     valueRalphRedZoneToChange = 0.000001f;
                 }
                 t = 0.0f;
+            } else {
+                Debug.Log("not in range to switch");
             }
         }
 
