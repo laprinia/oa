@@ -27,6 +27,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.20294218, y: 0.38815975, z: 0.25872004}
   m_Center: {x: 0.005488488, y: 0.20148951, z: -0.039929032}
+--- !u!114 &4981386735987683609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601950304827936556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc3920d033454849b79866c640c723d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemObject: {fileID: 11400000, guid: 9c6aff5432c524143b7ac2767ad29a0b, type: 2}
 --- !u!64 &117940783
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -136,7 +149,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 829749aa6dc94dc42b77923dd3c5634f,
         type: 3}
       propertyPath: m_Name
-      value: Pipe Case Variant
+      value: Pipes
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 829749aa6dc94dc42b77923dd3c5634f,
         type: 3}

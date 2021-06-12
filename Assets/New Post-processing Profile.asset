@@ -1,5 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4640711966678830117
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  shutterAngle:
+    overrideState: 0
+    value: 270
+  sampleCount:
+    overrideState: 0
+    value: 10
 --- !u!114 &-1183264728656239955
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -22,7 +44,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.03
+    value: 0.17
   fastMode:
     overrideState: 0
     value: 0
@@ -45,6 +67,7 @@ MonoBehaviour:
   - {fileID: 2343985908485276406}
   - {fileID: 7203051507624524182}
   - {fileID: -1183264728656239955}
+  - {fileID: -4640711966678830117}
 --- !u!114 &634139267436309345
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -155,7 +178,7 @@ MonoBehaviour:
     value: {x: 1, y: 1, z: 1, w: 0.2514891}
   gain:
     overrideState: 1
-    value: {x: 0.94577396, y: 0.8577668, z: 1, w: -0.026472539}
+    value: {x: 0.94577396, y: 0.8577668, z: 1, w: -0.52917224}
   masterCurve:
     overrideState: 1
     value:

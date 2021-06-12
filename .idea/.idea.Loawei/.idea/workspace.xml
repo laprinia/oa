@@ -19,7 +19,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e0963c9-c20a-498c-bf95-150687c6ec72" name="Default Changelist" comment="" />
+    <list default="true" id="4e0963c9-c20a-498c-bf95-150687c6ec72" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Astra Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Astra Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Astra Walk Back.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Astra Walk Back.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Astra Walk Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Astra Walk Left.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Astra Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Astra Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Brutal To Happy Walking.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Brutal To Happy Walking.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Dwarf Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Dwarf Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Full Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Full Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Full Left Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Full Left Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Full Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Full Run.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Full Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Full Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Walk Strafe Left.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Walk Strafe Left.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Walking Backwards.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Animations/Walking Backwards.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Scriptable Objects/Inventory/Astra Inventory.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Scriptable Objects/Inventory/Astra Inventory.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Bolt Case Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Bolt Case Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Metal Case Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Metal Case Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Pipe Case Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Pipe Case Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CollectableInteract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CollectableInteract.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +82,7 @@
       <option value="$PROJECT_DIR$/Assets/CollectableInteract.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Inventory/Scripts/ShowUIElements.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CollectableInteract.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qW80BqRdj322JC0ID1hym2z1iE" />
@@ -110,6 +140,7 @@
       <workItem from="1623249312887" duration="2146000" />
       <workItem from="1623270939919" duration="3295000" />
       <workItem from="1623353647440" duration="5851000" />
+      <workItem from="1623516936480" duration="1968000" />
     </task>
     <servers />
   </component>

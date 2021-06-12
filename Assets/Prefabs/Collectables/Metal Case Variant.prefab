@@ -423,6 +423,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.21272187, y: 0.36664897, z: 0.17808416}
   m_Center: {x: -0.0041637146, y: 0.21832418, z: 0.010809924}
+--- !u!114 &5363101864738302958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456539833330940533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc3920d033454849b79866c640c723d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemObject: {fileID: 11400000, guid: 955800e4899e3a549909ba5ccb7a0758, type: 2}
 --- !u!1 &9010628710803518842
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +501,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 829749aa6dc94dc42b77923dd3c5634f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.145
+      value: 4.086
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 829749aa6dc94dc42b77923dd3c5634f,
         type: 3}
@@ -568,7 +581,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 829749aa6dc94dc42b77923dd3c5634f,
         type: 3}
       propertyPath: m_Name
-      value: Metal Case Variant
+      value: Metal Scraps
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 829749aa6dc94dc42b77923dd3c5634f,
         type: 3}

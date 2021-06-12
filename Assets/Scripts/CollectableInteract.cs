@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class CollectableInteract : MonoBehaviour
 {
+    [SerializeField] private InventoryObject _inventoryObject;
     [SerializeField] private GameObject _canvas;
     [SerializeField] private TextMeshProUGUI _textMeshPro;
     [SerializeField] private float _interactRadius = 5.0f;
@@ -30,7 +31,11 @@ public class CollectableInteract : MonoBehaviour
             Debug.Log(nearest.name);
             Destroy(nearest.gameObject);
             
-            //TODO ADD TO INVENTORY
+            if (nearest.GetComponent<Item>()!=null)
+            {
+                _inventoryObject.AddItem(nearest.GetComponent<Item>().itemObject, 100);
+            }
+            
         }
     }
 
