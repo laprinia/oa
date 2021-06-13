@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e0963c9-c20a-498c-bf95-150687c6ec72" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeToLive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeToLive.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Building.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/source/GH-BFG10000.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/source/Water-Vaporator.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/source/textures.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +124,7 @@
       <workItem from="1623353647440" duration="5851000" />
       <workItem from="1623516936480" duration="7754000" />
       <workItem from="1623587932635" duration="471000" />
-      <workItem from="1623588524279" duration="1436000" />
+      <workItem from="1623588524279" duration="1541000" />
     </task>
     <servers />
   </component>
