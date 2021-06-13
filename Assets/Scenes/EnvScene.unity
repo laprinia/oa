@@ -19408,7 +19408,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622354059}
-  m_LocalRotation: {x: -0.09340724, y: -0.7859935, z: 0.122626655, w: -0.5987086}
+  m_LocalRotation: {x: -0.09340724, y: -0.7859936, z: 0.12262667, w: -0.59870857}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -22149,6 +22149,7 @@ MonoBehaviour:
   building: {fileID: 6101760594026466993}
   borderBuilding: {fileID: 4461516885186117638}
   flag: -1
+  sphere: {fileID: 304420221}
 --- !u!95 &1989385813 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4287373949215757877, guid: d5418c747dfb1ba4e856fdff5f13e1b7,
@@ -26299,7 +26300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611408599770157152}
   m_LocalRotation: {x: -0, y: -0.08960395, z: -0, w: 0.9959775}
-  m_LocalPosition: {x: 54.303673, y: 1.9845476, z: -4.7452264}
+  m_LocalPosition: {x: 54.303673, y: 1.9, z: -4.7452264}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3726676133869306454}

@@ -10,6 +10,7 @@ public class Build : MonoBehaviour {
     public GameObject borderBuilding;
 
     public int flag = -1;
+    public GameObject sphere;
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.E)) {
@@ -17,17 +18,22 @@ public class Build : MonoBehaviour {
             collisions = Physics.OverlapSphere(this.transform.position, 5);
             collisions = Array.FindAll(collisions, c => c.tag.Equals("Builder"));
             if ((collisions.Length != 0)) {
-                if (flag == -1) {
-                    borderBuilding.GetComponent<MeshRenderer>().material = borderBuildingMaterial;
-                } else {
-                    Material[] mats = building.GetComponent<MeshRenderer>().materials;
+                if(flag < 12) {
+                    if (flag == -1) {
+                        borderBuilding.GetComponent<MeshRenderer>().material = borderBuildingMaterial;
+                    } else {
+                        Material[] mats = building.GetComponent<MeshRenderer>().materials;
 
-                    mats[flag] = materialsForBuild[flag];
+                        mats[flag] = materialsForBuild[flag];
 
 
-                    building.GetComponent<MeshRenderer>().materials = mats;
+                        building.GetComponent<MeshRenderer>().materials = mats;
+                    }
+                    flag++;
+                    if(flag == 12) {
+                        sphere.SetActive(false);
+                    }
                 }
-                flag++;
             }
         }
     }
