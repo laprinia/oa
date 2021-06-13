@@ -68,7 +68,7 @@ MonoBehaviour:
   - {fileID: 7203051507624524182}
   - {fileID: -1183264728656239955}
   - {fileID: -4640711966678830117}
-  - {fileID: 2387156302816479450}
+  - {fileID: 5693498976556316924}
 --- !u!114 &634139267436309345
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -122,10 +122,10 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: 0
+    value: -3
   tint:
     overrideState: 1
-    value: 0
+    value: 13
   colorFilter:
     overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -176,7 +176,7 @@ MonoBehaviour:
     value: {x: 1, y: 1, z: 1, w: 0.013236267}
   gamma:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0.2514891}
+    value: {x: 1, y: 1, z: 1, w: 0.17059933}
   gain:
     overrideState: 1
     value: {x: 0.94577396, y: 0.8577668, z: 1, w: -0.52917224}
@@ -1401,7 +1401,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.052
+    value: 0.102
   size:
     overrideState: 1
     value: 1
@@ -1455,7 +1455,7 @@ MonoBehaviour:
   dirtIntensity:
     overrideState: 1
     value: 0
---- !u!114 &2387156302816479450
+--- !u!114 &5693498976556316924
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1464,39 +1464,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
-  m_Name: Vignette
+  m_Script: {fileID: 11500000, guid: b3f6f3f7c722b4544b97e3c75840aa33, type: 3}
+  m_Name: AutoExposure
   m_EditorClassIdentifier: 
   active: 1
   enabled:
     overrideState: 1
     value: 1
-  mode:
+  filtering:
     overrideState: 1
-    value: 0
-  color:
+    value: {x: 28.827162, y: 73.82717}
+  minLuminance:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
-  center:
+    value: -0.4
+  maxLuminance:
     overrideState: 1
-    value: {x: 0.5, y: 0.5}
-  intensity:
-    overrideState: 1
-    value: 0
-  smoothness:
-    overrideState: 1
-    value: 0.2
-  roundness:
+    value: 0.1
+  keyValue:
     overrideState: 1
     value: 1
-  rounded:
+  eyeAdaptation:
     overrideState: 1
     value: 0
-  mask:
+  speedUp:
     overrideState: 1
-    value: {fileID: 0}
-    defaultState: 1
-  opacity:
+    value: 2
+  speedDown:
     overrideState: 1
     value: 1
 --- !u!114 &7203051507624524182
@@ -1517,7 +1510,7 @@ MonoBehaviour:
     value: 1
   focusDistance:
     overrideState: 1
-    value: 5
+    value: 3
   aperture:
     overrideState: 1
     value: 5.6
