@@ -3254,6 +3254,7 @@ GameObject:
   - component: {fileID: 304420225}
   - component: {fileID: 304420224}
   - component: {fileID: 304420223}
+  - component: {fileID: 304420226}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Builder
@@ -3335,6 +3336,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304420221}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &304420226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304420221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a79bc603330a41bb686ab23bf9da4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  building: {fileID: 919132148702846638}
 --- !u!1 &304941423 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aae8e4bbddb967647a58a1d193054067,
@@ -7844,7 +7858,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563173390}
-  m_LocalRotation: {x: -0.104253165, y: -0.7836396, z: 0.13686566, w: -0.59691554}
+  m_LocalRotation: {x: -0.10425316, y: -0.7836396, z: 0.13686566, w: -0.59691554}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13155,7 +13169,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -24612,7 +24626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &946642516690676896
 GameObject:
   m_ObjectHideFlags: 0

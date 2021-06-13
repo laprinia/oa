@@ -3,19 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Build : MonoBehaviour
-{
+public class Build : MonoBehaviour {
     public Material[] materialsForBuild;
     public Material borderBuildingMaterial;
-    private Material transparentMaterial;
     public GameObject building;
     public GameObject borderBuilding;
 
     public int flag = -1;
-
-    private void Start() {
-        transparentMaterial = Resources.Load("TransparentMaterial", typeof(Material)) as Material;
-    }
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.E)) {
