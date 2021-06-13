@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e0963c9-c20a-498c-bf95-150687c6ec72" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Building.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/source/GH-BFG10000.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/source/Water-Vaporator.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/source/textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeToLive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeToLive.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +59,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Inventory/Scripts/ShowUIElements.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CollectableInteract.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" />
       <option value="$PROJECT_DIR$/Assets/TimeToLive.cs" />
       <option value="$USER_HOME$/Desktop/Health Bar Tutorial/Assets/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeToLive.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qW80BqRdj322JC0ID1hym2z1iE" />
@@ -124,7 +123,7 @@
       <workItem from="1623353647440" duration="5851000" />
       <workItem from="1623516936480" duration="7754000" />
       <workItem from="1623587932635" duration="471000" />
-      <workItem from="1623588524279" duration="1541000" />
+      <workItem from="1623588524279" duration="2986000" />
     </task>
     <servers />
   </component>

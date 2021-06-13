@@ -38,6 +38,8 @@ public class TimeToLive : MonoBehaviour
     public void ResetTimer()
     {
         ralphTimeToLiveExpired = false;
+        timeToWait = totalTimeToWait;
+        ringBar.fillAmount = totalTimeToWait;
         StartCoroutine(TimeCoroutine());
     }
 

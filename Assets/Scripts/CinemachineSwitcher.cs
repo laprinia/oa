@@ -59,7 +59,7 @@ public class CinemachineSwitcher : MonoBehaviour {
                 collisions = Physics.OverlapSphere(ralph.transform.position, 5);
                 collisions = Array.FindAll(collisions, c => c.tag.Equals("AstraTrigger"));
             }
-            if (collisions.Length != 0 && canSwitch) {
+            if ((collisions.Length != 0 && canSwitch) || (!isAstraCamera && timeToLive.ralphTimeToLiveExpired)) {
                 Debug.Log("aici");
                 canSwitch = false;
                 SwitchState();
