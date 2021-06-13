@@ -11,6 +11,9 @@ public class Build : MonoBehaviour {
 
     public int flag = -1;
     public GameObject sphere;
+    public ParticleSystem particleSystemBuild;
+
+    private bool canContinue = true;
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.E)) {
@@ -18,23 +21,32 @@ public class Build : MonoBehaviour {
             collisions = Physics.OverlapSphere(this.transform.position, 5);
             collisions = Array.FindAll(collisions, c => c.tag.Equals("Builder"));
             if ((collisions.Length != 0)) {
-                if(flag < 12) {
-                    if (flag == -1) {
-                        borderBuilding.GetComponent<MeshRenderer>().material = borderBuildingMaterial;
-                    } else {
-                        Material[] mats = building.GetComponent<MeshRenderer>().materials;
-
-                        mats[flag] = materialsForBuild[flag];
-
-
-                        building.GetComponent<MeshRenderer>().materials = mats;
-                    }
-                    flag++;
-                    if(flag == 12) {
-                        sphere.SetActive(false);
-                    }
+                if(flag < 12 && canContinue) {
+                    canContinue = false;
+                    StartCoroutine(waitBeforeBuilding(1.5f));
+                    
                 }
             }
         }
+    }
+
+    private IEnumerator waitBeforeBuilding(float waitTime) {
+        particleSystemBuild.Play();
+        yield return new WaitForSeconds(waitTime);
+        if (flag == -1) {
+            borderBuilding.GetComponent<MeshRenderer>().material = borderBuildingMaterial;
+        } else {
+            Material[] mats = building.GetComponent<MeshRenderer>().materials;
+
+            mats[flag] = materialsForBuild[flag];
+
+
+            building.GetComponent<MeshRenderer>().materials = mats;
+        }
+        flag++;
+        if (flag == 12) {
+            sphere.SetActive(false);
+        }
+        canContinue = true;
     }
 }
