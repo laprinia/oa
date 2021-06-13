@@ -3,7 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Build : MonoBehaviour {
+public class Build : MonoBehaviour
+{
+    public Animator canvasAnimator;
+    public GameObject disableKey;
     public Material[] materialsForBuild;
     public Material borderBuildingMaterial;
     public GameObject building;
@@ -24,7 +27,6 @@ public class Build : MonoBehaviour {
                 if(flag < 12 && canContinue) {
                     canContinue = false;
                     StartCoroutine(waitBeforeBuilding(1.5f));
-                    
                 }
             }
         }
@@ -46,6 +48,8 @@ public class Build : MonoBehaviour {
         flag++;
         if (flag == 12) {
             sphere.SetActive(false);
+            canvasAnimator.SetTrigger("appear");
+            disableKey.SetActive(true);
         }
         canContinue = true;
     }
