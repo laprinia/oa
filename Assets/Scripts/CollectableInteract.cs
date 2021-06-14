@@ -33,7 +33,15 @@ public class CollectableInteract : MonoBehaviour
             
             if (nearest.GetComponent<Item>()!=null)
             {
-                _inventoryObject.AddItem(nearest.GetComponent<Item>().itemObject, 100);
+                if (nearest.name.Equals("Neon Hex"))
+                {
+                    _inventoryObject.AddItem(nearest.GetComponent<Item>().itemObject, 1);
+                }else
+                {
+                    _inventoryObject.AddItem(nearest.GetComponent<Item>().itemObject, 100);
+
+                }
+                
             }
             
         }

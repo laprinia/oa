@@ -48,7 +48,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8491332024032196597}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -69,7 +69,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 829749aa6dc94dc42b77923dd3c5634f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.3706713
+      value: 5.18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 829749aa6dc94dc42b77923dd3c5634f,
         type: 3}
