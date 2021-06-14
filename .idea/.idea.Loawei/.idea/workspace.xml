@@ -21,14 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="4e0963c9-c20a-498c-bf95-150687c6ec72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/UI/Canvas.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/UI/Canvas.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Downloaded Assets/Item Case/source/blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloaded Assets/Item Case/source/blue.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Bolt Case Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Bolt Case Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Metal Case Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Metal Case Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpawnParticleSystem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpawnParticleSystem.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CollectableInteract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CollectableInteract.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +77,8 @@
       <option value="$PROJECT_DIR$/Assets/HideCursor.cs" />
       <option value="$PROJECT_DIR$/Assets/DisableAnimation.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BotMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CollectableInteract.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qW80BqRdj322JC0ID1hym2z1iE" />
@@ -136,7 +139,7 @@
       <workItem from="1623516936480" duration="7754000" />
       <workItem from="1623587932635" duration="471000" />
       <workItem from="1623588524279" duration="2986000" />
-      <workItem from="1623669821174" duration="5294000" />
+      <workItem from="1623669821174" duration="12207000" />
     </task>
     <servers />
   </component>

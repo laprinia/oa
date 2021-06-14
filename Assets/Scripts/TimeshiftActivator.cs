@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TimeshiftActivator : MonoBehaviour
 {
+    [SerializeField] private GameObject _particleSystem;
     [SerializeField] private bool _isActive = false;
     [SerializeField] private GameObject[] _directObjects;
     [SerializeField] private GameObject[] _indirectObjects;
@@ -61,6 +62,15 @@ public class TimeshiftActivator : MonoBehaviour
 
             if (PointInsideRadius(bulb.position))
             {
+                if (!bulb.transform.GetChild(0).GetComponent<MeshRenderer>().enabled)
+                {
+                    if (bulb.GetComponent<Animator>()!=null)
+                    {
+                        Debug.Log("Nu e null");
+                    }
+                 //   bulb.GetComponent<Animator>().SetTrigger("appear");
+                }
+               
                 bulb.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
                 bulb.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
             }
@@ -76,10 +86,42 @@ public class TimeshiftActivator : MonoBehaviour
         {
             if (PointInsideRadius(collect.position))
             {
+                if (!collect.gameObject.activeSelf)
+                {
+                    bool hasParticle = collect.gameObject.transform.childCount==3;
+                    ParticleSystem particle;
+                    if (hasParticle)
+                    {
+                        particle = collect.gameObject.transform.GetChild(2).GetComponent<ParticleSystem>();
+                    }
+                    else
+                    {
+                        GameObject go=Instantiate(_particleSystem, collect.position, Quaternion.Euler(-90,0,0));
+                        go.transform.parent = collect.transform;
+                        particle = go.GetComponent<ParticleSystem>();
+                    }
+                    particle.Play();
+                }
                 collect.gameObject.SetActive(true);
             }
             else
             {
+                if (collect.gameObject.activeSelf)
+                {
+                    bool hasParticle = collect.gameObject.transform.childCount==3;
+                    ParticleSystem particle;
+                    if (hasParticle)
+                    {
+                        particle = collect.gameObject.transform.GetChild(2).GetComponent<ParticleSystem>();
+                    }
+                    else
+                    {
+                        GameObject go=Instantiate(_particleSystem, collect.position, Quaternion.Euler(-90,0,0));
+                        go.transform.parent = collect.transform;
+                        particle = go.GetComponent<ParticleSystem>();
+                    }
+                    particle.Play();
+                }
                 collect.gameObject.SetActive(false);
             }
         }
