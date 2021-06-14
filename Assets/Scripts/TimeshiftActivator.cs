@@ -62,22 +62,29 @@ public class TimeshiftActivator : MonoBehaviour
 
             if (PointInsideRadius(bulb.position))
             {
-                if (!bulb.transform.GetChild(0).GetComponent<MeshRenderer>().enabled)
-                {
-                    if (bulb.GetComponent<Animator>()!=null)
-                    {
-                        Debug.Log("Nu e null");
-                    }
-                 //   bulb.GetComponent<Animator>().SetTrigger("appear");
-                }
-               
-                bulb.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
-                bulb.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
+                //bulb.transform.GetChild(0).GetChild(0).GetComponent<MeshRenderer>().enabled = true;
+                //bulb.transform.GetChild(1).GetChild(0).GetComponent<MeshRenderer>().enabled = true;
+
+                bulb.transform.GetChild(0).GetComponent<Animator>().SetBool("Grow", true);
+                bulb.transform.GetChild(1).GetComponent<Animator>().SetBool("Grow", true);
+
+                //if (!bulb.transform.GetChild(0).GetComponent<MeshRenderer>().enabled)
+                //{
+                //    if (bulb.GetComponent<Animator>()!=null)
+                //    {
+                //        Debug.Log("Nu e null");
+                //    }
+
+                //}
             }
             else
             {
-                bulb.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
-                bulb.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
+                //bulb.transform.GetChild(0).GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+                //bulb.transform.GetChild(1).GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+
+                bulb.transform.GetChild(0).GetComponent<Animator>().SetBool("Grow", false);
+                bulb.transform.GetChild(1).GetComponent<Animator>().SetBool("Grow", false);
+
             }
 
         }
