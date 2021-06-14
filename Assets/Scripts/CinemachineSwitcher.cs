@@ -29,10 +29,7 @@ public class CinemachineSwitcher : MonoBehaviour {
     private void SwitchState() {
         if (isAstraCamera) {
             isAstraCamera = !isAstraCamera;
-            ralphAnimator.SetBool("ShutDown", false);
-            animator.Play("Ralph camera");
-            astra.GetComponent<Movement>().enabled = false;
-            StartCoroutine(WaitBeforeMoving(1.0f, ralph));
+            StartCoroutine(WaitBeforeMovingRalph(1.0f));
             isLerping = true;
             canSwitch = true;
             ralphHUD.SetActive(true);
@@ -41,10 +38,11 @@ public class CinemachineSwitcher : MonoBehaviour {
             isLerping = true;
             isAstraCamera = !isAstraCamera;
             ralphAnimator.SetBool("ShutDown", true);
+            astraAnimator.SetBool("Construction", false);
             animator.Play("Astra camera");
             ralph.GetComponent<Movement>().enabled = false;
             StartCoroutine(WaitBeforeMoving(3.2f, astra));
-            canSwitch = true;
+            StartCoroutine(WaitBeforeSwitching(60));
             ralphHUD.SetActive(false);
         }
     }
@@ -90,5 +88,20 @@ public class CinemachineSwitcher : MonoBehaviour {
     private IEnumerator WaitBeforeMoving(float waitTime, GameObject character) {
         yield return new WaitForSeconds(waitTime);
         character.GetComponent<Movement>().enabled = true;
+    }
+
+    private IEnumerator WaitBeforeMovingRalph(float waitTime) {
+        astra.GetComponent<Movement>().enabled = false;
+        astraAnimator.SetBool("Construction", true);
+        yield return new WaitForSeconds(4.0f);
+        ralphAnimator.SetBool("ShutDown", false);
+        animator.Play("Ralph camera");
+        yield return new WaitForSeconds(waitTime);
+        ralph.GetComponent<Movement>().enabled = true;
+    }
+
+    private IEnumerator WaitBeforeSwitching(float waitTime) {
+        yield return new WaitForSeconds(waitTime);
+        canSwitch = true;
     }
 }
