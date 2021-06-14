@@ -54,6 +54,8 @@ public class TimeshiftActivator : MonoBehaviour
     {
         var bulbPlantParentGo = Array.FindAll(_indirectObjects, o => o.GetComponent<TimeshiftBulbRedirect>() != null)[0];
         var collectableParentGo=Array.FindAll(_indirectObjects, o => o.tag.Equals("Collectable"))[0];
+        var enemiesParentGo=Array.FindAll(_indirectObjects, o => o.tag.Equals("Enemies"))[0];
+        
         foreach (Transform bulb in bulbPlantParentGo.transform)
         {
 
@@ -81,6 +83,29 @@ public class TimeshiftActivator : MonoBehaviour
                 collect.gameObject.SetActive(false);
             }
         }
+        foreach (Transform collect in collectableParentGo.transform)
+        {
+            if (PointInsideRadius(collect.position))
+            {
+                collect.gameObject.SetActive(true);
+            }
+            else
+            {
+                collect.gameObject.SetActive(false);
+            }
+        }
+        foreach (Transform enemy in enemiesParentGo.transform)
+        {
+            if (PointInsideRadius(enemy.GetChild(0).position))
+            {
+                enemy.gameObject.SetActive(true);
+            }
+            else
+            {
+                enemy.gameObject.SetActive(false);
+            }
+        }
+        
     }
 
     public void SetRadius(float value) {

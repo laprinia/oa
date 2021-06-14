@@ -11,6 +11,7 @@ TagManager:
   - RalphTrigger
   - AstraTrigger
   - Builder
+  - Enemies
   layers:
   - Default
   - TransparentFX

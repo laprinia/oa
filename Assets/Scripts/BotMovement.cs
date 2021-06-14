@@ -16,36 +16,33 @@ public class BotMovement : MonoBehaviour
     [SerializeField] private bool walkPointSet;
     [SerializeField] private float walkPointRange;
     [SerializeField] private float timeBetweenAttacks;
-
-    [SerializeField] private bool alreadyAttacked;
+    [SerializeField] private float timeBetweenWalks;
+    [SerializeField] private bool alreadyAttacked,alreadyWalked;
     [SerializeField] private float sightRange, attackRange;
     [SerializeField] private bool playerInSigthRange, playerInAttackRange;
     [SerializeField] float _speed = 2.5f;
     [SerializeField] private float _turnSmoothTime = 0.1f;
-   // [SerializeField] private Animator _animator;
+    [SerializeField] private Animator _animator;
     private float turnSmooth;
 
     private void Awake() => _agent = GetComponent<NavMeshAgent>();
 
     void Update()
     {
-       // _agent.ResetPath();
-        _agent.SetDestination(_target.position);
         //velocity
-        // float velocity = _agent.velocity.magnitude/_agent.speed;
+         float velocity = _agent.velocity.magnitude/_agent.speed;
 
-        // _animator.SetFloat("zVelocity", velocity, 0.3f, Time.deltaTime);
-        // _animator.SetFloat("xVelocity", velocity, 0.3f, Time.deltaTime);
+         _animator.SetFloat("zVelocity", velocity, 0.3f, Time.deltaTime);
+         _animator.SetFloat("xVelocity", velocity, 0.3f, Time.deltaTime);
 
-        //movement
-        // playerInSigthRange = Physics.CheckSphere(transform.position, sightRange, _playerLayer);
-        // playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, _playerLayer);
-        // //if (!playerInAttackRange && !playerInSigthRange) Patrol();
-        // if (playerInAttackRange && !playerInSigthRange) Chase();
-        // if (playerInAttackRange && playerInSigthRange) Attack();
-        // float runSpeed = 1;
-        //
-
+         //movement
+         var position = transform.position;
+         playerInSigthRange = Physics.CheckSphere(position, sightRange, _playerLayer);
+         playerInAttackRange = Physics.CheckSphere(position, attackRange, _playerLayer);
+         if (!playerInAttackRange && !playerInSigthRange) Patrol();
+         if (!playerInAttackRange && playerInSigthRange) Chase();
+         if (playerInAttackRange && playerInSigthRange) Attack();
+     
     }
 
    private void Patrol()
@@ -57,7 +54,7 @@ public class BotMovement : MonoBehaviour
 
         Vector3 distanceToWalkPoint = transform.position - _walkPoint;
 
-        if (distanceToWalkPoint.magnitude < 1f)
+        if (distanceToWalkPoint.magnitude < 1.5f)
             walkPointSet = false;
     }
     private void SearchWalkPoint()
@@ -68,10 +65,18 @@ public class BotMovement : MonoBehaviour
 
         _walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
-        if (Physics.Raycast(_walkPoint, -transform.up, 2f, _groundLayer))
+        if (Physics.Raycast(_walkPoint, -transform.up, 2f, _groundLayer) && !alreadyWalked)
+        {
             walkPointSet = true;
+            alreadyWalked = true;
+            Invoke(nameof(ResetWalk), timeBetweenWalks);
+        }
+            
     }
-
+    private void ResetWalk()
+    {
+        alreadyWalked = false;
+    }
     private void Chase()
     {
         _agent.SetDestination(_target.position);
@@ -85,10 +90,8 @@ public class BotMovement : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            ///Attack code here
-            //TODO ATTACK
-            ///End of attack code
-
+            _animator.SetTrigger("kill");
+            //TODO END GAME
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
