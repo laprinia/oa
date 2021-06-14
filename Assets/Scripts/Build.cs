@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Build : MonoBehaviour
 {
+    public TimeshiftActivator ralphTimeshiftActivator;
     public Animator canvasAnimator;
     public GameObject disableKey;
     public Material[] materialsForBuild;
@@ -50,6 +51,7 @@ public class Build : MonoBehaviour
             sphere.SetActive(false);
             canvasAnimator.SetTrigger("appear");
             disableKey.SetActive(true);
+            ralphTimeshiftActivator.SetRadius(200);
         }
         canContinue = true;
     }
