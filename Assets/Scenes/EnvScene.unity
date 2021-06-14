@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de22f769b58b6c4990c2f5bbee0627a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioFadeTime: 10
+  audioFadeTime: 6
   ralphAudio: {fileID: 5693290229418021356}
   astraAudio: {fileID: 1989385819}
   ralphAnimator: {fileID: 134479238}
@@ -1644,7 +1644,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179648329}
-  m_LocalRotation: {x: 0.4399673, y: -0.5445555, z: 0.4096278, w: 0.5848874}
+  m_LocalRotation: {x: 0.43996724, y: -0.54455554, z: 0.40962783, w: 0.5848873}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5444,6 +5444,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Inventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010022738281818892, guid: 69042c0600d4f4b42902236390e79479,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010022738281818892, guid: 69042c0600d4f4b42902236390e79479,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010022738281818892, guid: 69042c0600d4f4b42902236390e79479,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8010022738281818894, guid: 69042c0600d4f4b42902236390e79479,
         type: 3}
@@ -10183,7 +10198,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154959988}
-  m_LocalRotation: {x: 0.43996632, y: -0.54455626, z: 0.4096288, w: 0.58488667}
+  m_LocalRotation: {x: 0.4399663, y: -0.54455626, z: 0.40962884, w: 0.58488667}
   m_LocalPosition: {x: 39.62929, y: 5.57, z: 7.64126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -11192,7 +11207,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246477946}
-  m_LocalRotation: {x: -0.17666808, y: -0.36054358, z: 0.069750935, w: -0.91319853}
+  m_LocalRotation: {x: -0.17666806, y: -0.3605436, z: 0.069750935, w: -0.91319853}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11287,6 +11302,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Space Key
       objectReference: {fileID: 0}
+    - target: {fileID: 3197003479615141418, guid: 8fe85e0c89bf6f042a01750a7e258aff,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.27058825
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860707724459043144, guid: 8fe85e0c89bf6f042a01750a7e258aff,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860707724459043144, guid: 8fe85e0c89bf6f042a01750a7e258aff,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860707724459043144, guid: 8fe85e0c89bf6f042a01750a7e258aff,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 7860707724459043146, guid: 8fe85e0c89bf6f042a01750a7e258aff,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -11361,6 +11396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: SPACE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860707725336740545, guid: 8fe85e0c89bf6f042a01750a7e258aff,
+        type: 3}
+      propertyPath: m_fontColor.a
+      value: 0.27058825
       objectReference: {fileID: 0}
     - target: {fileID: 7860707726266687908, guid: 8fe85e0c89bf6f042a01750a7e258aff,
         type: 3}
@@ -17006,10 +17046,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -18120,7 +18160,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622354059}
-  m_LocalRotation: {x: -0.14337946, y: -0.3628394, z: 0.056608424, w: -0.9190133}
+  m_LocalRotation: {x: -0.14337946, y: -0.36283937, z: 0.05660842, w: -0.9190133}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -20190,22 +20230,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1550467975}
     m_Modifications:
     - target: {fileID: 1978088209, guid: 25e87b1ae1548494abe81ce9f4827cf5, type: 3}
-      propertyPath: _target
-      value: 
-      objectReference: {fileID: 5124329143012775363}
-    - target: {fileID: 1978088209, guid: 25e87b1ae1548494abe81ce9f4827cf5, type: 3}
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 848863679}
+    - target: {fileID: 1978088209, guid: 25e87b1ae1548494abe81ce9f4827cf5, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 5124329143012775363}
     - target: {fileID: 6682243862931257834, guid: 25e87b1ae1548494abe81ce9f4827cf5,
         type: 3}
       propertyPath: m_Name
       value: Nora Pack (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6682243862931257834, guid: 25e87b1ae1548494abe81ce9f4827cf5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemies
       objectReference: {fileID: 0}
     - target: {fileID: 6682243862931257835, guid: 25e87b1ae1548494abe81ce9f4827cf5,
         type: 3}
@@ -20538,10 +20573,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -22109,6 +22144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2109836947}
+  - component: {fileID: 2109836948}
   m_Layer: 0
   m_Name: Zone 1 Reestablished
   m_TagString: Untagged
@@ -22140,6 +22176,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2109836948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109836946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a92b2c3b4f5ae8418fd11966c6e19fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2113294966
 GameObject:
   m_ObjectHideFlags: 0
@@ -29112,10 +29160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

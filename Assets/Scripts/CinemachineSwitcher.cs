@@ -34,7 +34,8 @@ public class CinemachineSwitcher : MonoBehaviour
         if (isAstraCamera)
         {
             StartCoroutine(StartFade(astraAudio, audioFadeTime, 0));
-            ralphAudio.volume = 0.1f;
+            StartCoroutine(StartFade(ralphAudio, audioFadeTime, 0.1f));
+            
             isAstraCamera = !isAstraCamera;
             StartCoroutine(WaitBeforeMovingRalph(1.0f));
             isLerping = true;
@@ -44,11 +45,11 @@ public class CinemachineSwitcher : MonoBehaviour
         } else
         {
             StartCoroutine(StartFade(ralphAudio, audioFadeTime, 0));
-            astraAudio.volume = 0.1f;
+            StartCoroutine(StartFade(astraAudio, audioFadeTime, 0.1f));
+            
             isLerping = true;
             isAstraCamera = !isAstraCamera;
             ralphAnimator.SetBool("ShutDown", true);
-            astraAnimator.SetBool("Construction", false);
             animator.Play("Astra camera");
             ralph.GetComponent<Movement>().enabled = false;
             StartCoroutine(WaitBeforeMoving(3.2f, astra));
@@ -118,6 +119,7 @@ public class CinemachineSwitcher : MonoBehaviour
         astraAnimator.SetBool("Construction", true);
         yield return new WaitForSeconds(4.0f);
         ralphAnimator.SetBool("ShutDown", false);
+        astraAnimator.SetBool("Construction", false);
         animator.Play("Ralph camera");
         yield return new WaitForSeconds(waitTime);
         ralph.GetComponent<Movement>().enabled = true;

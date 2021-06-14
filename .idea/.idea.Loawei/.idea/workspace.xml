@@ -21,43 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4e0963c9-c20a-498c-bf95-150687c6ec72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Looking_Through_Files_Low.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Looking_Through_Files_Low.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bulb Appear.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bulb Appear.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bulb Disappear.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bulb Disappear.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bulb Iddle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bulb Iddle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bulb Plant.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bulb Plant.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bulb Plant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bulb Plant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Death Animation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Death Animation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Death.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Death.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Death.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Death.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DisableAnimation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DisableAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Astra/Astra Animator Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Astra/Astra Animator Controller.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HideCursor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HideCursor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Picture1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Picture1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Nora/Nora Pack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Nora/Nora Pack.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Timeshift.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Timeshift.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/bubbl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/bubbl.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/endgame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/endgame.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +137,7 @@
       <workItem from="1623587932635" duration="471000" />
       <workItem from="1623588524279" duration="2986000" />
       <workItem from="1623669821174" duration="12812000" />
-      <workItem from="1623695764105" duration="1644000" />
+      <workItem from="1623695764105" duration="3881000" />
     </task>
     <servers />
   </component>

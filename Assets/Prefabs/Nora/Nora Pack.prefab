@@ -6194,8 +6194,8 @@ MonoBehaviour:
   timeBetweenWalks: 0
   alreadyAttacked: 0
   alreadyWalked: 0
-  sightRange: 4
-  attackRange: 1.5
+  sightRange: 2.5
+  attackRange: 1
   playerInSigthRange: 0
   playerInAttackRange: 0
   _speed: 2.5
