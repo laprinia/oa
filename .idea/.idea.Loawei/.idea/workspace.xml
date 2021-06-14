@@ -21,11 +21,43 @@
   <component name="ChangeListManager">
     <list default="true" id="4e0963c9-c20a-498c-bf95-150687c6ec72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loawei/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Building.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/source/GH-BFG10000.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/source/Water-Vaporator.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/source/textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BotMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BotMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Looking_Through_Files_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Looking_Through_Files_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bulb Appear.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bulb Appear.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bulb Disappear.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bulb Disappear.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bulb Iddle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bulb Iddle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bulb Plant.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bulb Plant.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bulb Plant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bulb Plant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Death Animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Death Animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Death.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Death.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Death.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Death.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DisableAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DisableAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloaded Assets/Free Boulder Pack/Materials/Boulders_RedStone_2K.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Plants/source/Tree.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Rock2/source/DesertCliff1M.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Rocks/Western Rock/source/lambert2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Terrain/source/TerrainMeshMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HideCursor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HideCursor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Picture1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Picture1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnvScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Timeshift.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Timeshift.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bubbl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bubbl.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/endgame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/endgame.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +81,7 @@
     <setting file="file://$USER_HOME$/Downloads/EnemyAiTutorial.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BotMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/a5/18343d42/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/HideCursor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Health Bar Tutorial/Assets/Health.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DisableAnimation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -65,7 +95,6 @@
       <option value="$USER_HOME$/Desktop/Health Bar Tutorial/Assets/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeToLive.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" />
       <option value="$PROJECT_DIR$/Assets/ShowPostcard.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Build.cs" />
       <option value="$PROJECT_DIR$/Assets/HideCursor.cs" />
@@ -74,6 +103,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeshiftActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Death.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BotMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CinemachineSwitcher.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qW80BqRdj322JC0ID1hym2z1iE" />
@@ -135,7 +165,7 @@
       <workItem from="1623587932635" duration="471000" />
       <workItem from="1623588524279" duration="2986000" />
       <workItem from="1623669821174" duration="12812000" />
-      <workItem from="1623695764105" duration="413000" />
+      <workItem from="1623695764105" duration="1644000" />
     </task>
     <servers />
   </component>

@@ -170,4 +170,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LightPos: {r: 46.01914, g: 0.8536836, b: -0.19713771, a: 0}
-    - _LightPosition: {r: 41.32998, g: 0.46771574, b: -5.9401817, a: 0}
+    - _LightPosition: {r: 43.868645, g: 0.67044246, b: -5.490793, a: 0}

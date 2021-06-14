@@ -4,7 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CinemachineSwitcher : MonoBehaviour {
+public class CinemachineSwitcher : MonoBehaviour
+{
+    public float audioFadeTime;
+    public AudioSource ralphAudio;
+    public AudioSource astraAudio;
     public Animator ralphAnimator;
     public Animator astraAnimator;
     public GameObject ralphHUD;
@@ -27,14 +31,20 @@ public class CinemachineSwitcher : MonoBehaviour {
     }
 
     private void SwitchState() {
-        if (isAstraCamera) {
+        if (isAstraCamera)
+        {
+            StartCoroutine(StartFade(astraAudio, audioFadeTime, 0));
+            ralphAudio.volume = 0.1f;
             isAstraCamera = !isAstraCamera;
             StartCoroutine(WaitBeforeMovingRalph(1.0f));
             isLerping = true;
             canSwitch = true;
             ralphHUD.SetActive(true);
             timeToLive.ResetTimer();
-        } else {
+        } else
+        {
+            StartCoroutine(StartFade(ralphAudio, audioFadeTime, 0));
+            astraAudio.volume = 0.1f;
             isLerping = true;
             isAstraCamera = !isAstraCamera;
             ralphAnimator.SetBool("ShutDown", true);
@@ -45,6 +55,19 @@ public class CinemachineSwitcher : MonoBehaviour {
             StartCoroutine(WaitBeforeSwitching(60));
             ralphHUD.SetActive(false);
         }
+    }
+    public static IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
+    {
+        float currentTime = 0;
+        float start = audioSource.volume;
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        yield break;
     }
 
     private void Update() {
