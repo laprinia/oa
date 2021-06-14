@@ -107,4 +107,4 @@ Material:
     - _BorderColor: {r: 1, g: 0.0141509175, b: 0.50939864, a: 0}
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LightPosition: {r: 48.343754, g: 1.0896038, b: -1.0164, a: 0}
+    - _LightPosition: {r: 41.32998, g: 0.46771574, b: -5.9401817, a: 0}

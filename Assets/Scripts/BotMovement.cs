@@ -9,6 +9,7 @@ using Random = UnityEngine.Random;
 
 public class BotMovement : MonoBehaviour
 {
+    [SerializeField] private GameObject deathUI;
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private Transform _target;
     [SerializeField] private LayerMask _groundLayer, _playerLayer;
@@ -91,9 +92,9 @@ public class BotMovement : MonoBehaviour
         if (!alreadyAttacked)
         {
             _animator.SetTrigger("kill");
-            //TODO END GAME
+            deathUI.SetActive(true);
             alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+           // Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }
     private void ResetAttack()

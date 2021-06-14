@@ -6178,6 +6178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68704d17ca09ef74b95dfb1962e1f254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathUI: {fileID: 0}
   _agent: {fileID: 1978088212}
   _target: {fileID: 0}
   _groundLayer:
@@ -18926,7 +18927,7 @@ GameObject:
   - component: {fileID: 6682243862931257835}
   m_Layer: 0
   m_Name: Nora Pack
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
