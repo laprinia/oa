@@ -154,7 +154,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _LightRad: 5
-    - _LightRadius: 200
+    - _LightRadius: 5
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -170,4 +170,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LightPos: {r: 46.01914, g: 0.8536836, b: -0.19713771, a: 0}
-    - _LightPosition: {r: 41.03053, g: 0.86921084, b: 2.4612792, a: 0}
+    - _LightPosition: {r: 41.94114, g: 0.5040684, b: -2.729948, a: 0}

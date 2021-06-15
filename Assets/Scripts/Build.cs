@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Build : MonoBehaviour
 {
+    public GameObject enemiesParent;
+    public GameObject collectablesParent;
     public TimeshiftActivator ralphTimeshiftActivator;
     public Animator canvasAnimator;
     public GameObject disableKey;
@@ -52,6 +54,8 @@ public class Build : MonoBehaviour
             canvasAnimator.SetTrigger("appear");
             disableKey.SetActive(true);
             ralphTimeshiftActivator.SetRadius(200);
+            enemiesParent.SetActive(false);
+            collectablesParent.SetActive(false);
         }
         canContinue = true;
     }
